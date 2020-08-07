@@ -18,7 +18,7 @@ jobs:
           ./FrameworkA/Carthage/
           ./FrameworkB/Carthage/
           ./App/Carthage/
-        key: carthage-${{ hashFiles('./FrameworkA/Cartfile.resolved', './FrameworkB/Cartfile.resolved', './App/Cartfile.resolved') }}
+        key: carthage-foo
         
     - name: Display content
       if: steps.cache.outputs.cache-hit == 'true'
